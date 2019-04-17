@@ -224,7 +224,7 @@
     Task("Deploy-Database")
          .Does(() =&gt;
          {
-            var connectionString = @"Server=(LocalDb)\v12.0";
+            var connectionString = @"Server=(localdb)\MSSqlLocalDb";
             var dbName = "CakeTest";
 
             if (DatabaseExists(connectionString, dbName))

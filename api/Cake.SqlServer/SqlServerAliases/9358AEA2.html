@@ -224,7 +224,7 @@
     Task("Sql-Operations")
         .Does(() =&gt;
         {
-            var connectionString = @"Data Source=(LocalDb)\v12.0;Initial Catalog=MyDatabase";
+            var connectionString = @"Data Source=(localdb)\MSSqlLocalDb;Initial Catalog=MyDatabase";
             var sqlCommand = "create table [CakeTest].dbo.[CakeTestTable] (id int null)";
             ExecuteSqlCommand(connectionString, sqlCommand);
         });</code></pre>

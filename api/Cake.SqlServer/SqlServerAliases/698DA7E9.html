@@ -225,7 +225,7 @@
     Task("Create-Database")
          .Does(() =&gt;
          {
-            var connectionString = @"Server=(LocalDb)\v12.0";
+            var connectionString = @"Server=(localdb)\MSSqlLocalDb";
             var dbName = "CakeTest";
             CreateDatabase(connectionString, dbName);
         });</code></pre>

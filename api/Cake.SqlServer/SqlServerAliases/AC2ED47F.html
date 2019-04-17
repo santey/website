@@ -226,7 +226,7 @@
     Task("Drop-Database")
          .Does(() =&gt;
          {
-            var connectionString = @"Server=(LocalDb)\v12.0";
+            var connectionString = @"Server=(localdb)\MSSqlLocalDb";
             var dbName = "CakeTest";
             DropDatabase(connectionString, dbName);
         });</code></pre>

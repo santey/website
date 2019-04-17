@@ -224,7 +224,7 @@
     Task("Sql-Operations")
         .Does(() =&gt;
         {
-            using (var connection = OpenSqlConnection(@"Data Source=(LocalDb)\v12.0;Initial Catalog=MyDatabase"))
+            using (var connection = OpenSqlConnection(@"Data Source=(localdb)\MSSqlLocalDb;Initial Catalog=MyDatabase"))
             {
                 ExecuteSqlCommand(connection, "create table [CakeTest].dbo.[CakeTestTable] (id int null)");
                 ExecuteSqlCommand(connection, "...");

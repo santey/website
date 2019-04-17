@@ -224,7 +224,7 @@
     Task("Create-Database-If-Not-Exists")
          .Does(() =&gt;
          {
-            var connectionString = @"Server=(LocalDb)\v12.0";
+            var connectionString = @"Server=(localdb)\MSSqlLocalDb";
             var dbName = "CakeTest";
             var createSettings = new CreateDatabaseSettings()
                                          .WithPrimaryFile(@"C:\MyPath\DB\CakeTest.mdf")

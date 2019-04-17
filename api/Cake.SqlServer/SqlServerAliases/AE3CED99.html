@@ -225,7 +225,7 @@
          .Does(() =&gt;
          {
              SetSqlCommandTimeout(60);
-             using (var connection = OpenSqlConnection(@"Data Source=(LocalDb)\v12.0;Initial Catalog=MyDatabase"))
+             using (var connection = OpenSqlConnection(@"Data Source=(localdb)\MSSqlLocalDb;Initial Catalog=MyDatabase"))
              {
                  ExecuteSqlCommand(connection, "...");
                  ExecuteSqlFile(connection, "./somePath/MyScript.sql");
